@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    sh 'docker build -t javatechie/devops-integration .'
+                    sh 'docker build -t hariboss199/devops-integration .'
                 }
             }
         }
@@ -24,7 +24,7 @@ pipeline {
                    sh 'docker login -u javatechie -p ${dockerhubpwd}'
 
 }
-                   sh 'docker push javatechie/devops-integration'
+                   sh 'docker push hariboss199/devops-integration'
                 }
             }
         }
